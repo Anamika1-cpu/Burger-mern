@@ -1,0 +1,61 @@
+@import "color";
+
+.home{
+    height: 100vh;
+    overflow-x: hidden;
+    >div{
+        padding-left: 8rem;
+        padding-top: 15rem;
+        >h1{
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    >a{
+        background-color: $red;
+        color: white;
+        margin: 2rem  8rem;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        display: block;
+        width: 10rem;
+        padding: 1rem;
+        cursor: pointer;
+        &:hover{
+            background-color: $reddark;
+        }
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../assests/bg.svg");
+        z-index: -1;
+        background-size: cover;
+        position: absolute;
+        background-repeat: no-repeat;
+        left: 0%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .home{
+        >div{
+            text-align: center;
+            padding-top: 10rem;
+            padding-left:.5rem;
+            
+            >h1{
+            letter-spacing: -5px;
+            }
+        }
+        >a{
+            margin:0 auto;
+            margin-top: 1rem;
+        }
+    }
+}
