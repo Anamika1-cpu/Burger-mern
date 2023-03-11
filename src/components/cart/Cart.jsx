@@ -3,7 +3,6 @@ import img1 from '../../assests/burger1.png'
 import img2 from '../../assests/burger2.png'
 import img3 from '../../assests/burger3.png'
 import {Link} from "react-router-dom"
-import Footer from ".././layout/Footer"
 const CartItem = ({value,img,title,increment,decrement}) =>(
     <div className="cartItem">
         <div>
@@ -60,7 +59,6 @@ const Cart = () => {
                 <Link to='/shipping'>Checkout</Link>
             </article>
         </main>
-        <Footer/>
     </section>
     )
 }
