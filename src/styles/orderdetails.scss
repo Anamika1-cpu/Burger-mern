@@ -1,0 +1,54 @@
+@import "color.scss";
+
+.orderDetails{
+    background-color: $pink;
+    width:100%;
+    >main{
+        background-color: white;
+        max-width: 900px;
+        height: 100%;
+        margin: auto;
+        align-items: center;
+        >h1{
+            font-size: 3rem;
+            text-transform: uppercase;
+            align-items: center;
+            text-align: center;
+            font-weight: 300;
+            margin: 1rem;
+        }   
+        >div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            >h1{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+           >p{
+            white-space: nowrap;
+            margin: .7rem;
+            >b{
+                margin-right: 5px;
+            }
+           }
+        }
+    >article{
+        >h1{
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        >div{
+            padding: 1rem 2rem;
+            background-color: whitesmoke;
+            display: flex;
+            margin: .5rem;
+            justify-content: space-between;
+        }
+    }
+    }
+}

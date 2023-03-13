@@ -1,0 +1,26 @@
+@import "color";
+
+.login{
+    width: 100%;
+    background-color: $pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    >button{
+        padding: .5rem 1rem;
+        background-color: $red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        svg{
+            margin: .2rem;
+        }
+    }
+    
+}
